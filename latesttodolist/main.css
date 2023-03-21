@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: hsla(195, 100%, 72%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(195, 100%, 72%, 1) 0%,
+    hsla(292, 100%, 83%, 1) 42%,
+    hsla(252, 56%, 76%, 1) 77%,
+    hsla(230, 74%, 70%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(195, 100%, 72%, 1) 0%,
+    hsla(292, 100%, 83%, 1) 42%,
+    hsla(252, 56%, 76%, 1) 77%,
+    hsla(230, 74%, 70%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(195, 100%, 72%, 1) 0%,
+    hsla(292, 100%, 83%, 1) 42%,
+    hsla(252, 56%, 76%, 1) 77%,
+    hsla(230, 74%, 70%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6fdbff", endColorstr="#f3a9ff", GradientType=1 );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* heading */
+h1 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+form {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* container for input and list of todos  */
+
+/* task input collector */
+.taskinput {
+  padding: 0.5rem;
+  width: 100%;
+  height: 46px;
+  outline: none;
+  /* border-radius: 5px; */
+  /* border: px solid black; */
+  font-size: 30px;
+}
+/* btn of adding task */
+.addTodos {
+  height: 3rem;
+  width: 4rem;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  /* padding: 3px; */
+}
+/* #add-icon {
+  font-size: large;
+} */
+.input-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 5px;
+}
+
+.addTodos:hover {
+  color: aliceblue;
+  background: skyblue;
+  cursor: pointer;
+}
+/* container list of todos */
+.to-dos {
+  margin-top: 35px;
+}
+.paragraph-styling {
+  margin: 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+/* description input */
+.taskdesc {
+  padding-top: 0.5rem;
+  font-size: 20px;
+
+  margin-top: 20px;
+  width: 100%;
+  height: 46px;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding-left: 12px;
+}
+
+.Todo {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 10px; */
+}
+
+.Todo-item {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.Description {
+  display: inline;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  /* border: 2px solid black; */
+  border-radius: 7px;
+  padding: 0.5rem;
+  /* background: white; */
+  list-style-type: none;
+  width: 100%;
+}
+
+form {
+  max-width: 60vw;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.trash-btn,
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: 100%;
+}
+.Todo-item {
+  list-style-type: none;
+  margin-right: 8px;
+  /* margin-bottom: 10px; */
+  width: 100%;
+}
+.complete-btn {
+  background: rgb(54, 184, 255);
+}
+.complete-btn:hover {
+  color: cornflowerblue;
+  background: lightskyblue;
+}
+.trash-btn {
+  background: blueviolet;
+}
+.trash-btn:hover {
+  color: #ff00f7;
+  background: #d4a8e9;
+}
+
+.Description2 {
+  font-size: medium;
+  /* border: 2px solid black; */
+  font-style: italic;
+  border-radius: 5px;
+  /* background: white; */
+  padding: 5px;
+  /* margin-top: 4px;
+  margin-bottom: 4px; */
+  width: 100%;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.fall {
+  transform: translateY(8rem) translateX(8rem) rotateZ(20deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.Todo {
+  display: flex;
+
+  /* align-items: flex-end; */
+}
+.Todo-item {
+  /* width: 60vw; */
+  display: flex;
+
+  gap: 0.25 rem;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
